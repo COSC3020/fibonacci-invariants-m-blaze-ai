@@ -27,3 +27,14 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+Invariant: All Fibonacci values for indices less than k are either already stored in memo or will be before computing memo[k].
+
+Reasoning: Since helper(k) computes memo[k] using memo[k-1] and memo[k-2], we must ensure that these two values are available at the start (typically through recursive calls). As such, the invariant ensures that each recursive step has the necessary inputs while avoiding redundant processes or steps.
+
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”
+
+For this assignment, I wrote the responses for the section regarding Invariation and my reasoning. However, I did ask Chat GPT for help with the clarity and specifity of my writing.
