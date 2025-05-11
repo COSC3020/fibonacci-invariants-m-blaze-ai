@@ -19,3 +19,5 @@ const test =
             JSON.stringify(fibTest(n));
     });
 jsc.assert(test);
+
+console.log("All tests passed!");
